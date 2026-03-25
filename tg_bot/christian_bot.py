@@ -25,7 +25,8 @@ from datetime import datetime, date
 # ==============================================================
 # 🔑 TOKEN — отримайте у @BotFather в Telegram
 # ==============================================================
-TOKEN = "8739979077:AAHMNhQjjqYIowoZcEBbR_lyz6nrKbrTeW8"
+import os
+TOKEN = os.getenv("NO_SIN_bot")
 
 bot = telebot.TeleBot(TOKEN)
 
